@@ -6,18 +6,33 @@
 @import "tailwindcss-intersect";
 
 @font-face {
-  font-family: "Honk";
-  src: url("/fonts/Honk-Regular-VariableFont_MORF,SHLN.ttf") format("truetype");
+  font-family: "Inter-Regular";
+  src: url("/fonts/Inter_24pt-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Quicksand";
-  src: url("/fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
+  font-family: "Inter";
+  src: url("/fonts/Inter_24pt-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Domine";
-  src: url("/fonts/Domine-Regular.ttf") format("truetype");
+  font-family: "Poppins-Bold";
+  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("/fonts/Poppins-ExtraBold.ttf") format("truetype");
 }
 
 @theme {
@@ -72,7 +87,7 @@
   --color-neutral-900: #2a2a2a;
   --color-neutral-950: #1f1f1f;
 
-    --color-seaGreen-50: #f1f6ee;
+  --color-seaGreen-50: #f1f6ee;
   --color-seaGreen-100: #e6f0e1;
   --color-seaGreen-200: #cde0c2;
   --color-seaGreen-300: #b4d1a4;
@@ -84,11 +99,17 @@
   --color-seaGreen-900: #1a2513;
   --color-seaGreen-950: #0e140a;
 
-
   /*Typografi */
   --font-display: "Honk", monospace;
   --font-sans: "Quicksand", sans-serif;
   --font-serif: "Domine", serif;
+
+  --font-display: "Poppins-SemiBold";
+  --font-header: "Poppins-Regular";
+  --font-subheader: "Inter-SemiBold";
+  --font-button: "Poppins-ExtraBold";
+  --font-body: "Inter-Regular";
+  --font-link: "Inter-Regular"
 }
 
 @layer base {
