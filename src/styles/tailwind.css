@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
@@ -6,45 +6,96 @@
 @import "tailwindcss-intersect";
 
 @font-face {
-  font-family: 'Honk';
-  src: url('/fonts/Honk-Regular-VariableFont_MORF,SHLN.ttf') format('truetype');
+  font-family: "Honk";
+  src: url("/fonts/Honk-Regular-VariableFont_MORF,SHLN.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url('/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Domine';
-  src: url('/fonts/Domine-Regular.ttf') format('truetype');
+  font-family: "Domine";
+  src: url("/fonts/Domine-Regular.ttf") format("truetype");
 }
 
 @theme {
   /* Her tilføjes theme variable // tokens */
 
   /*Farver */
-  --color-primary-400: #00E4F5;
-  --color-primary-500: #006269;
-  --color-primary-600: #006D75;
-  --color-secondary-400: #F5E400;
-  --color-secondary-500: #F5A600;
-  --color-secondary-600: #F57A00;
+  --color-lemonYellow-50: #fdfdec;
+  --color-lemonYellow-100: #fbfad5;
+  --color-lemonYellow-200: #f8f6af;
+  --color-lemonYellow-300: #f4f285;
+  --color-lemonYellow-400: #f1ee60;
+  --color-lemonYellow-500: #ede937;
+  --color-lemonYellow-600: #d7d313;
+  --color-lemonYellow-700: #9f9c0e;
+  --color-lemonYellow-800: #6c690a;
+  --color-lemonYellow-900: #333205;
+  --color-lemonYellow-950: #1c1c03;
+
+  --color-yellowGreen-50: #f9fbee;
+  --color-yellowGreen-100: #f2f7d9;
+  --color-yellowGreen-200: #e6efb8;
+  --color-yellowGreen-300: #d9e792;
+  --color-yellowGreen-400: #ccdf6d;
+  --color-yellowGreen-500: #bfd749;
+  --color-yellowGreen-600: #a3bc29;
+  --color-yellowGreen-700: #7b8e1f;
+  --color-yellowGreen-800: #536015;
+  --color-yellowGreen-900: #282e0a;
+  --color-yellowGreen-950: #161906;
+
+  --color-tealBlue-50: #e5f9ff;
+  --color-tealBlue-100: #ccf3ff;
+  --color-tealBlue-200: #94e6ff;
+  --color-tealBlue-300: #61daff;
+  --color-tealBlue-400: #29cdff;
+  --color-tealBlue-500: #00bbf5;
+  --color-tealBlue-600: #0090bd;
+  --color-tealBlue-700: #00698a;
+  --color-tealBlue-800: #004155;
+  --color-tealBlue-900: #001f29;
+  --color-tealBlue-950: #001014;
+
+  --color-neutral-50: #fcfcfc;
+  --color-neutral-100: #fcfcfc;
+  --color-neutral-200: #dfdfdf;
+  --color-neutral-300: #c4c4c4;
+  --color-neutral-400: #a6a6a6;
+  --color-neutral-500: #8b8b8b;
+  --color-neutral-600: #727272;
+  --color-neutral-700: #595959;
+  --color-neutral-800: #404040;
+  --color-neutral-900: #2a2a2a;
+  --color-neutral-950: #1f1f1f;
+
+    --color-seaGreen-50: #f1f6ee;
+  --color-seaGreen-100: #e6f0e1;
+  --color-seaGreen-200: #cde0c2;
+  --color-seaGreen-300: #b4d1a4;
+  --color-seaGreen-400: #9cc185;
+  --color-seaGreen-500: #80b064;
+  --color-seaGreen-600: #6a994e;
+  --color-seaGreen-700: #50733b;
+  --color-seaGreen-800: #364e28;
+  --color-seaGreen-900: #1a2513;
+  --color-seaGreen-950: #0e140a;
+
 
   /*Typografi */
-  --font-display: 'Honk', monospace;
-  --font-sans: 'Quicksand', sans-serif;
-  --font-serif: 'Domine', serif;
+  --font-display: "Honk", monospace;
+  --font-sans: "Quicksand", sans-serif;
+  --font-serif: "Domine", serif;
 }
 
 @layer base {
-
 }
 
-@layer components{
-
+@layer components {
 }
 
-@layer utilities{
-  
+@layer utilities {
 }
