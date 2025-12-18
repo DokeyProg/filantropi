@@ -9,7 +9,7 @@ import Carousel from "../components/Carousel.astro";
 
 <MainLayout title="Forside">
   <main class="flex flex-col">
-    <section id="hero">
+    <section id="hero" class="z-0">
       <div>
         <img src="images/kidsinforest10.jpg" alt="" class="h-[490px] object-cover" />
       </div>
@@ -21,9 +21,9 @@ import Carousel from "../components/Carousel.astro";
         <Button href="deltagelsesform" variant="primary" class="mx-auto mt-[30px]">Deltag</Button>
       </div>
     </section>
-    <section id="forest" class="mt-[85px] relative">
-      <img src="assets/Baggrund skov.svg" alt="" class="lg:hidden w-full absolute z-0" />
-      <img src="assets/Baggrund skov-desktop.svg" alt="" class="hidden lg:block w-full absolute z-0" />
+    <section id="forest" class="mt-[85px] relative z-1">
+      <img src="assets/Baggrund skov.svg" alt="" class="lg:hidden w-full absolute z-1" />
+      <img src="assets/Baggrund skov-desktop.svg" alt="" class="hidden lg:block w-full absolute z-1" />
       <div class="flex flex-col pt-[174px] gap-[96px] px-8 z-10 relative">
         <div class="flex flex-col gap-10 relative self-stretch">
           <p class="text-lemonYellow-50">
@@ -56,7 +56,7 @@ import Carousel from "../components/Carousel.astro";
         </div>
       </div>
     </section>
-    <section id="carousel" class="h-full mt-50 flex flex-col gap-10">
+    <section id="carousel" class="h-full mt-50 flex flex-col gap-10 z-3 bg-neutral-50">
       <div class="px-7 flex flex-col gap-2">
         <h1 class="h2">Deltag som:</h1>
         <p class="p1">Vælg en af disse roller for at deltage til Affaldsindsamlingen.</p>
@@ -66,7 +66,7 @@ import Carousel from "../components/Carousel.astro";
       </div>
 
     </section>
-    <section id="tree-bark" class="max-sm:mt-[185px] mt-[585px] w-full object-fit">
+    <section id="tree-bark" class="max-sm:mt-[185px] w-full object-fit z-4 bg-neutral-100">
       <img src="assets/treebark.svg" alt="" class="lg:hidden w-full absolute object-cover z-0 brightness-60" />
       <img src="assets/pexels-monse-olmos.svg" alt="" class="hidden lg:block w-full absolute object-cover z-0 brightness-60" />
       <div class="flex flex-col gap-20 z-1 relative pt-[216px] px-5">
