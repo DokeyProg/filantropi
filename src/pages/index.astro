@@ -5,8 +5,33 @@ import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import Button from "../components/Button.astro";
 ---
+
 <MainLayout title="Forside">
-	<main class="container mx-auto p-4">
-		<h1 class="s1">hej med dig</h1>
-	</main>
-</MainLayout>
+  <main class="container mx-auto">
+    <section id="hero">
+      <div>
+        <img src="images/kidsinforest10.jpg" alt="" class="h-[490px] object-cover" />
+      </div>
+      <div class="mt-[50px] flex flex-col gap-[20px]">
+        <h1 class="b3 text-center">Kom med og gør en forskel for et renere Danmark</h1>
+        <p class="s1 text-center">fra den 13. - 19. april 2026</p>
+      </div>
+      <div class="place-self-center mt-[50px]">
+        <Button href="deltagelsesform" variant="primary" class="mx-auto mt-[30px]">Deltag</Button>
+      </div>
+    </section>
+    <section class="mt-[85px]">
+      <img src="assets/Baggrund skov.svg" alt="" class="w-full absolute z-0" />
+      <div>
+	  <div class="flex flex-col gap-10 px-5 pt-[174px] z-10 relative self-stretch h-44 justify-start">
+        <p class="text-lemonYellow-50">
+          Siden 2006 har Danmarks Naturfredningsforenings årlige Affaldsindsamling fået danskere fra hele landet med ud at samle affald i naturen. Alle kan være med! Opret selv din egen
+          affaldsindsamling eller find én, som du kan være med til.
+        </p>
+		<img class="w-full object-cover" src="https://placehold.co/366x206" />
+      </div>
+	  <div></div>
+	  </div>
+    </section>
+  </main></MainLayout
+>

@@ -9,7 +9,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
   <div id="navbar" class="container mx-auto p-4 flex flex-row justify-between items-center">
     <div id="logo" class="">
       <Link href="/" class="l1">
-        <img src="src/assets/logo.svg" alt="Logo" />
+        <img src="assets/logo.svg" alt="Logo" />
       </a>
     </div>
     <nav id="desktopmenu" class="hidden lg:block">
@@ -20,7 +20,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
       </ul>
     </nav>
     <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">
-      <img src="src/assets/menu-open.svg" alt="Menu" />
+      <img src="assets/menu-open.svg" alt="Menu" />
     </button>
   </div>
   <nav id="mobilmenu" class="w-full flex flex-col content-center bg-seaGreen-800" x-show="showmenu" x-cloak x-transition x-on:click.outside="showmenu = false">
