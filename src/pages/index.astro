@@ -7,7 +7,7 @@ import Button from "../components/Button.astro";
 ---
 
 <MainLayout title="Forside">
-  <main class="container mx-auto">
+  <main class="flex flex-col">
     <section id="hero">
       <div>
         <img src="images/kidsinforest10.jpg" alt="" class="h-[490px] object-cover" />
@@ -20,18 +20,97 @@ import Button from "../components/Button.astro";
         <Button href="deltagelsesform" variant="primary" class="mx-auto mt-[30px]">Deltag</Button>
       </div>
     </section>
-    <section class="mt-[85px]">
-      <img src="assets/Baggrund skov.svg" alt="" class="w-full absolute z-0" />
-      <div>
-	  <div class="flex flex-col gap-10 px-5 pt-[174px] z-10 relative self-stretch h-44 justify-start">
-        <p class="text-lemonYellow-50">
-          Siden 2006 har Danmarks Naturfredningsforenings årlige Affaldsindsamling fået danskere fra hele landet med ud at samle affald i naturen. Alle kan være med! Opret selv din egen
-          affaldsindsamling eller find én, som du kan være med til.
-        </p>
-		<img class="w-full object-cover" src="https://placehold.co/366x206" />
+    <section class="mt-[85px] relative">
+      <img src="assets/Baggrund skov.svg" alt="" class="lg:hidden w-full absolute z-0" />
+      <img src="assets/Baggrund skov-desktop.svg" alt="" class="hidden lg:block w-full absolute z-0" />
+      <div class="flex flex-col pt-[174px] gap-[96px] px-8 z-10 relative">
+        <div class="flex flex-col gap-10 relative self-stretch">
+          <p class="text-lemonYellow-50">
+            Siden 2006 har Danmarks Naturfredningsforenings årlige Affaldsindsamling fået danskere fra hele landet med ud at samle affald i naturen. Alle kan være med! Opret selv din egen
+            affaldsindsamling eller find én, som du kan være med til.
+          </p>
+          <img class="w-full object-cover" src="https://placehold.co/366x206" />
+        </div>
+        <div class="flex flex-col gap-[20px]">
+          <h1 class="h2 text-seaGreen-100">Sidste års resultat</h1>
+          <p class="p1 text-seaGreen-100">
+            Affaldsinsamlingen afholtes i 2025 fra den 31. marts til 6. april, hvor med jeres hjælp og engagement gjode vi alle en kæmpe forskel for vores natur og byer
+          </p>
+        </div>
+        <div class="">
+          <div class="flex flex-row justify-between">
+            <div class="flex flex-col gap-3 place-items-center">
+              <img src="assets/infografik1.svg" alt="infografik" />
+              <p class="p1 w-[101px] text-center text-seaGreen-100">118 ton affald tilmeld</p>
+            </div>
+            <div class="flex flex-col gap-3 place-items-center">
+              <img src="assets/infografik2.svg" alt="infografik" />
+              <p class="p1 w-[101px] text-center text-seaGreen-100">190.000 deltager</p>
+            </div>
+            <div class="flex flex-col gap-3 place-items-center">
+              <img src="assets/infografik3.svg" alt="infografik" />
+              <p class="p1 w-[101px] text-center text-seaGreen-100">412 lokale events</p>
+            </div>
+          </div>
+        </div>
       </div>
-	  <div></div>
-	  </div>
     </section>
-  </main></MainLayout
->
+    <section class="max-sm:mt-[185px] mt-[585px] w-full object-fit">
+      <img src="assets/treebark.svg" alt="" class="lg:hidden w-full absolute object-cover z-0 brightness-60" />
+      <img src="assets/pexels-monse-olmos.svg" alt="" class="hidden lg:block w-full absolute object-cover z-0 brightness-60" />
+      <div class="flex flex-col gap-20 z-1 relative pt-[216px] px-5">
+        <div class="place-self-end">
+          <img src="assets/Simplified Logo.svg" alt="" />
+        </div>
+        <div class="flex flex-col gap-5">
+          <h1 class="h2 text-seaGreen-100">Om Affaldsindsamlingen</h1>
+          <p class="p1 text-seaGreen-100">
+            Siden 2006 har Danmarks Naturfredningsforenings årlige Affaldsindsamling fået danskere fra hele landet med ud at samle affald i naturen. Alle kan være med! Opret selv din egen
+            affaldsindsamling eller find én, som du kan være med til.
+          </p>
+        </div>
+        <div class="place-self-center pt-10">
+          <Button href="deltagelsesform" variant="primary" class="mx-auto mt-[30px]">Mere om os</Button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex flex-col gap-10 bg-neutral-100 relative mt-50 px-8 py-8">
+        <div class="flex flex-col gap-2 px-8">
+          <h1 class="h2">FAQ</h1>
+          <p class="p1">Få svar på ofte stillede spørgsmål</p>
+        </div>
+        <div class="flex flex-col px-8 gap-5">
+          <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
+            <p class="s1 text-neutral-950">Frivillig</p>
+            <img src="assets/link-icon.svg" alt="link" class="w-4" />
+          </div>
+          <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
+            <p class="s1 text-neutral-950">Arrangør</p>
+            <img src="assets/link-icon.svg" alt="link" class="w-4" />
+          </div>
+          <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
+            <p class="s1 text-neutral-950">Skoler og dagtilbud</p>
+            <img src="assets/link-icon.svg" alt="link" class="w-4" />
+          </div>
+          <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
+            <p class="s1 text-neutral-950">Virksomheder</p>
+            <img src="assets/link-icon.svg" alt="link" class="w-4" />
+          </div>
+          <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
+            <p class="s1 text-neutral-950">Sådan gør du - Videovejledning</p>
+            <img src="assets/link-icon.svg" alt="link" class="w-4" />
+          </div>
+          <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
+            <p class="s1 text-neutral-950">Er du fra en DN lokalafdeling?</p>
+            <img src="assets/link-icon.svg" alt="link" class="w-4" />
+          </div>
+          <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
+            <p class="s1 text-neutral-950">Praktiske information</p>
+            <img src="assets/link-icon.svg" alt="link" class="w-4" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</MainLayout>
