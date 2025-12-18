@@ -108,6 +108,51 @@
   --font-link: "Inter-Regular"
 }
 
+.d1 {
+  @apply font-display text-[100px] sm:text-[100px] lg:text-[200px];
+}
+
+.d2 {
+  @apply font-display text-[75px] sm:text-[75px] lg:text-[150px];
+}
+
+.d3 {
+  @apply font-display text-[50px] sm:text-[50px] lg:text-[100px];
+}
+
+
+.h1 {
+  @apply font-header text-[50px] sm:text-[50px] lg:text-[100px];
+}
+
+.h2 {
+  @apply font-header text-[35px] sm:text-[35px] lg:text-[60px];
+}
+
+.s1 {
+  @apply font-subheader text-[25px] sm:text-[25px] lg:text-[40px];
+}
+
+.b1 {
+  @apply font-button text-[20px] sm:text-[20px] lg:text-[30px];
+}
+
+.b2 {
+  @apply font-button text-[25px] sm:text-[25px] lg:text-[35px];
+}
+
+.b3 {
+  @apply font-button text-[30px] sm:text-[30px] lg:text-[40px];
+}
+
+.p1 {
+  @apply font-body text-[18px] sm:text-[18px] lg:text-[24px];
+}
+
+.l1 {
+  @apply font-link text-[18px] sm:text-[18px] lg:text-[24px];
+}
+
 @layer base {
 }
 

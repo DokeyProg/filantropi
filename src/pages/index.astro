@@ -11,7 +11,11 @@ import Carousel from "../components/Carousel.astro";
   <main class="flex flex-col">
     <section id="hero" class="z-0">
       <div>
-        <img src="images/kidsinforest10.jpg" alt="" class="h-[490px] object-cover" />
+        <img
+          src="images/kidsinforest10.jpg"
+          alt=""
+          class="h-[490px] lg:w-full lg:h-[790px] object-cover"
+        />
       </div>
       <div class="mt-[50px] flex flex-col gap-[20px]">
         <h1 class="b3 text-center">Kom med og gør en forskel for et renere Danmark</h1>
@@ -23,70 +27,98 @@ import Carousel from "../components/Carousel.astro";
     </section>
     <section id="forest" class="mt-[85px] relative z-1">
       <img src="assets/Baggrund skov.svg" alt="" class="lg:hidden w-full absolute z-1" />
-      <img src="assets/Baggrund skov-desktop.svg" alt="" class="hidden lg:block w-full absolute z-1" />
-      <div class="flex flex-col pt-[174px] gap-[96px] px-8 z-10 relative">
+      <img
+        src="assets/Baggrund skov-desktop.svg"
+        alt=""
+        class="hidden lg:block w-full absolute z-1"
+      />
+      <div class="flex flex-col pt-[174px] lg:pt-[374px] gap-[96px] px-8 lg:px-110 z-10 relative">
         <div class="flex flex-col gap-10 relative self-stretch">
-          <p class="text-lemonYellow-50">
-            Siden 2006 har Danmarks Naturfredningsforenings årlige Affaldsindsamling fået danskere fra hele landet med ud at samle affald i naturen. Alle kan være med! Opret selv din egen
+          <p class="text-lemonYellow-50 p1">
+            Siden 2006 har Danmarks Naturfredningsforenings årlige Affaldsindsamling fået danskere
+            fra hele landet med ud at samle affald i naturen. Alle kan være med! Opret selv din egen
             affaldsindsamling eller find én, som du kan være med til.
           </p>
-          <img class="w-full object-cover" src="https://placehold.co/366x206" />
+          <img
+            class="w-full lg:w-[1037px] place-self-center object-cover"
+            src="https://placehold.co/366x206"
+          />
         </div>
         <div class="flex flex-col gap-[20px]">
           <h1 class="h2 text-seaGreen-100">Sidste års resultat</h1>
           <p class="p1 text-seaGreen-100">
-            Affaldsinsamlingen afholtes i 2025 fra den 31. marts til 6. april, hvor med jeres hjælp og engagement gjode vi alle en kæmpe forskel for vores natur og byer
+            Affaldsinsamlingen afholtes i 2025 fra den 31. marts til 6. april, hvor med jeres hjælp
+            og engagement gjode vi alle en kæmpe forskel for vores natur og byer
           </p>
         </div>
         <div class="">
           <div class="flex flex-row justify-between">
-            <div class="flex flex-col gap-3 place-items-center">
-              <img src="assets/infografik1.svg" alt="infografik" />
-              <p class="p1 w-[101px] text-center text-seaGreen-100">118 ton affald tilmeld</p>
+            <div class="flex flex-col gap-3 lg:gap-6 place-items-center">
+              <img src="assets/infografik1.svg" alt="infografik" class="lg:w-[200px]" />
+              <p class="p1 w-[101px] lg:w-[150px] text-center text-seaGreen-100">
+                118 ton affald tilmeld
+              </p>
             </div>
-            <div class="flex flex-col gap-3 place-items-center">
-              <img src="assets/infografik2.svg" alt="infografik" />
-              <p class="p1 w-[101px] text-center text-seaGreen-100">190.000 deltager</p>
+            <div class="flex flex-col gap-3 lg:gap-6 place-items-center">
+              <img src="assets/infografik2.svg" alt="infografik" class="lg:w-[200px]" />
+              <p class="p1 w-[101px] lg:w-[150px] text-center text-seaGreen-100">
+                190.000 deltager
+              </p>
             </div>
-            <div class="flex flex-col gap-3 place-items-center">
-              <img src="assets/infografik3.svg" alt="infografik" />
-              <p class="p1 w-[101px] text-center text-seaGreen-100">412 lokale events</p>
+            <div class="flex flex-col gap-3 lg:gap-6 place-items-center">
+              <img src="assets/infografik3.svg" alt="infografik" class="lg:w-[200px]" />
+              <p class="p1 w-[101px] lg:w-[150px] text-center text-seaGreen-100">
+                412 lokale events
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="carousel" class="h-full mt-50 flex flex-col gap-10 z-3 bg-neutral-50">
-      <div class="px-7 flex flex-col gap-2">
+    <section id="carousel" class="h-full pt-20 lg:pt-30 flex flex-col gap-10 z-3 bg-neutral-50">
+      <div class="px-7 lg:px-75 flex flex-col gap-2">
         <h1 class="h2">Deltag som:</h1>
         <p class="p1">Vælg en af disse roller for at deltage til Affaldsindsamlingen.</p>
       </div>
-      <div class="">
-        <Carousel></Carousel>
+      <div class="place-self-center">
+        <Carousel />
       </div>
-
     </section>
     <section id="tree-bark" class="max-sm:mt-[185px] w-full object-fit z-4 bg-neutral-100">
-      <img src="assets/treebark.svg" alt="" class="lg:hidden w-full absolute object-cover z-0 brightness-60" />
-      <img src="assets/pexels-monse-olmos.svg" alt="" class="hidden lg:block w-full absolute object-cover z-0 brightness-60" />
-      <div class="flex flex-col gap-20 z-1 relative pt-[216px] px-5">
-        <div class="place-self-end">
-          <img src="assets/Simplified Logo.svg" alt="" />
+      <img
+        src="assets/treebark.svg"
+        alt=""
+        class="lg:hidden w-full absolute object-cover z-0 brightness-60"
+      />
+      <img
+        src="assets/pexels-monse-olmos.svg"
+        alt=""
+        class="hidden lg:block w-full absolute object-cover z-0 brightness-80"
+      />
+      <div class="flex flex-col gap-20 lg:gap-10 z-1 relative pt-[216px] lg:pt-[516px] px-5 lg:px-25 lg:py-40">
+        <div class="flex flex-col lg:flex-row-reverse gap-100 justify-between">
+          <div class="place-self-end">
+            <img src="assets/Simplified Logo.svg" alt="" class="lg:w-[373px]" />
+          </div>
+          <div class="flex flex-col gap-5">
+            <h1 class="h2 text-seaGreen-100">Om Affaldsindsamlingen</h1>
+            <p class="p1 text-seaGreen-100 lg:w-[566px]">
+              Siden 2006 har Danmarks Naturfredningsforenings årlige Affaldsindsamling fået danskere
+              fra hele landet med ud at samle affald i naturen. Alle kan være med! Opret selv din
+              egen affaldsindsamling eller find én, som du kan være med til.
+            </p>
+          </div>
         </div>
-        <div class="flex flex-col gap-5">
-          <h1 class="h2 text-seaGreen-100">Om Affaldsindsamlingen</h1>
-          <p class="p1 text-seaGreen-100">
-            Siden 2006 har Danmarks Naturfredningsforenings årlige Affaldsindsamling fået danskere fra hele landet med ud at samle affald i naturen. Alle kan være med! Opret selv din egen
-            affaldsindsamling eller find én, som du kan være med til.
-          </p>
-        </div>
-        <div class="place-self-center pt-10">
-          <Button href="deltagelsesform" variant="primary" class="mx-auto mt-[30px]">Mere om os</Button>
+
+        <div class="place-self-center lg:place-self-start pt-10">
+          <Button href="deltagelsesform" variant="primary" class="mx-auto mt-[30px]"
+            >Mere om os</Button
+          >
         </div>
       </div>
     </section>
-    <section>
-      <div class="flex flex-col gap-10 bg-neutral-100 relative mt-50 px-8 py-8">
+    <section class="z-5">
+      <div class="flex flex-col gap-10 bg-neutral-100 relative mt-50 lg:mt-70 px-8 lg:px-75 py-8">
         <div class="flex flex-col gap-2 px-8">
           <h1 class="h2">FAQ</h1>
           <p class="p1">Få svar på ofte stillede spørgsmål</p>
