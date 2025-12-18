@@ -4,6 +4,7 @@ import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import Button from "../components/Button.astro";
+import Carousel from "../components/Carousel.astro";
 ---
 
 <MainLayout title="Forside">
@@ -20,7 +21,7 @@ import Button from "../components/Button.astro";
         <Button href="deltagelsesform" variant="primary" class="mx-auto mt-[30px]">Deltag</Button>
       </div>
     </section>
-    <section class="mt-[85px] relative">
+    <section id="forest" class="mt-[85px] relative">
       <img src="assets/Baggrund skov.svg" alt="" class="lg:hidden w-full absolute z-0" />
       <img src="assets/Baggrund skov-desktop.svg" alt="" class="hidden lg:block w-full absolute z-0" />
       <div class="flex flex-col pt-[174px] gap-[96px] px-8 z-10 relative">
@@ -55,7 +56,17 @@ import Button from "../components/Button.astro";
         </div>
       </div>
     </section>
-    <section class="max-sm:mt-[185px] mt-[585px] w-full object-fit">
+    <section id="carousel" class="h-full mt-50 flex flex-col gap-10">
+      <div class="px-7 flex flex-col gap-2">
+        <h1 class="h2">Deltag som:</h1>
+        <p class="p1">Vælg en af disse roller for at deltage til Affaldsindsamlingen.</p>
+      </div>
+      <div class="">
+        <Carousel></Carousel>
+      </div>
+
+    </section>
+    <section id="tree-bark" class="max-sm:mt-[185px] mt-[585px] w-full object-fit">
       <img src="assets/treebark.svg" alt="" class="lg:hidden w-full absolute object-cover z-0 brightness-60" />
       <img src="assets/pexels-monse-olmos.svg" alt="" class="hidden lg:block w-full absolute object-cover z-0 brightness-60" />
       <div class="flex flex-col gap-20 z-1 relative pt-[216px] px-5">
