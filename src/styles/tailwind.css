@@ -148,7 +148,7 @@
 }
 
 .p1 {
-  @apply font-button text-[18px] sm:text-[18px] lg:text-[24px];
+  @apply font-body text-[18px] sm:text-[18px] lg:text-[24px];
 }
 
 .l1 {
