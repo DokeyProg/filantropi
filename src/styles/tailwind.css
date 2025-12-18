@@ -108,29 +108,51 @@
   --font-link: "Inter-Regular";
 
   /* Typografi */
+
+}
+.d1 {
+  @apply font-display text-[100px] sm:text-[100px] lg:text-[200px];
+}
+
+.d2 {
+  @apply font-display text-[75px] sm:text-[75px] lg:text-[150px];
+}
+
+.d3 {
+  @apply font-display text-[50px] sm:text-[50px] lg:text-[100px];
+}
+
+
 .h1 {
-  @apply font-display text-[64px] sm:text-[64px] lg:text-[150px];
+  @apply font-header text-[50px] sm:text-[50px] lg:text-[100px];
 }
 
 .h2 {
-  @apply font-display text-[48px] sm:text-[48px] lg:text-[115px];
+  @apply font-header text-[35px] sm:text-[35px] lg:text-[60px];
 }
 
-.h3 {
-  @apply font-display text-[32px] sm:text-[32px] lg:text-[64px];
+.s1 {
+  @apply font-subheader text-[25px] sm:text-[25px] lg:text-[40px];
 }
 
-.h4 {
-  @apply font-display text-[20px] sm:text-[20px] lg:text-[48px];
+.b1 {
+  @apply font-button text-[20px] sm:text-[20px] lg:text-[30px];
 }
 
-.h5 {
-  @apply font-display text-[16px] sm:text-[16px] lg:text-[32px];
+.b2 {
+  @apply font-button text-[25px] sm:text-[25px] lg:text-[35px];
 }
 
-.p {
-  @apply font-text text-[14px] sm:text-[14px] lg:text-[20px];
+.b3 {
+  @apply font-button text-[30px] sm:text-[30px] lg:text-[40px];
 }
+
+.p1 {
+  @apply font-button text-[18px] sm:text-[18px] lg:text-[24px];
+}
+
+.l1 {
+  @apply font-link text-[18px] sm:text-[18px] lg:text-[24px];
 }
 
 @layer base {
