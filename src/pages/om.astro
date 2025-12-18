@@ -5,7 +5,64 @@ import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import Button from "../components/Button.astro";
 ---
+
 <MainLayout title="Om os">
-	<main>
-	</main>
+  <main class="flex flex-col gap-10">
+    <section id="logo" class="pb-20">
+      <div class="place-self-center py-20">
+        <img src="assets/LOGO - Primært.svg" alt="" />
+      </div>
+      <div class="place-self-center px-8">
+        <p class="s1 text-center text-seaGreen-600">
+          Vi er Danmarks Naturfredningsforenings indsamling af affald i naturen
+        </p>
+      </div>
+    </section>
+    <section id="forening" class="flex flex-col gap-10">
+      <div class="px-8 flex flex-col gap-5">
+        <h1 class="b2">Danmarks Naturfredningsforenings årlige indsamling af affald i naturen</h1>
+        <p class="p1">
+          Siden 2006 har Danmarks Naturfredningsforenings årlige Affaldsindsamling fået danskere fra
+          hele landet med ud at samle affald i naturen. Vores mål er et Danmark helt fri for affald.
+          Vi drømmer om at afholde en affaldsindsamling, hvor vi må lede forgæves efter affald i
+          naturen og byerne, fordi produkterne i stedet indgår i et cirkulært kredsløb og dermed
+          ikke bliver til affald i første omgang – til glæde for vores natur, miljø og klima.
+        </p>
+      </div>
+      <div>
+        <img
+          class="w-[366px] lg:w-[1037px] place-self-center object-cover"
+          src="https://placehold.co/366x206"
+        />
+      </div>
+    </section>
+    <section id="presse">
+      <img src="assets/PRESSE.svg" alt="" class="w-full absolute object-cover" />
+      <div class="relative py-20 px-8">
+        <h1 class="h2 text-neutral-100">Presse</h1>
+        <div>
+          <ul class="">
+            <li class="p1 text-neutral-100 list-disc">
+              Affaldsindsamlingen er Danmarks Naturfredningsforenings årlige indsamling af affald og
+              har været afholdt siden 2006.
+            </li>
+            <li class="p1 text-neutral-100">I år finder Affaldsindsamlingen sted i hele uge 14 (31. marts – 6. april).</li>
+            <li class="p1 text-neutral-100">
+              I løbet af hverdagene er det fortrinsvis børn fra skoler og dagtilbud, mens
+              indsamlingen kulminerer i weekenden med lokale arrangementer i hele landet.
+            </li>
+            <li class="p1 text-neutral-100">
+              I 2024 deltog op mod 240.000 danskere i Affaldsindsamlingen - heriblandt 190.000 børn
+              fra skoler og dagtilbud.
+            </li>
+            <li class="p1 text-neutral-100">
+              Efter indsamlingen registrerer indsamlerne deres affald hos Danmarks
+              Naturfredningsforening, der herefter laver en opgørelse over, hvor meget der er blevet
+              samlet.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 </MainLayout>
