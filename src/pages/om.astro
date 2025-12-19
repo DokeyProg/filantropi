@@ -8,7 +8,7 @@ import Button from "../components/Button.astro";
 
 <MainLayout title="Om os">
   <main class="flex flex-col gap-10">
-    <section id="logo" class="pb-20">
+    <section id="logo" class="pb-20 z-0">
       <div class="place-self-center py-20">
         <img src="assets/LOGO - Primært.svg" alt="" />
       </div>
@@ -18,7 +18,7 @@ import Button from "../components/Button.astro";
         </p>
       </div>
     </section>
-    <section id="forening" class="flex flex-col gap-10">
+    <section id="forening" class="flex flex-col gap-10 z-1">
       <div class="px-8 flex flex-col gap-5">
         <h1 class="b2">Danmarks Naturfredningsforenings årlige indsamling af affald i naturen</h1>
         <p class="p1">
@@ -36,33 +36,83 @@ import Button from "../components/Button.astro";
         />
       </div>
     </section>
-    <section id="presse">
+    <section id="presse" class="z-2">
       <img src="../assets/PRESSE.svg" alt="" class="w-full absolute object-cover" />
       <div class="relative py-20 px-8">
-        <h1 class="h2 text-neutral-100">Presse</h1>
+        <h1 class="h2 text-neutral-100 pb-10">Presse</h1>
         <div>
-          <ul class="">
+          <ul class="px-8 flex flex-col gap-5">
             <li class="p1 text-neutral-100 list-disc">
               Affaldsindsamlingen er Danmarks Naturfredningsforenings årlige indsamling af affald og
               har været afholdt siden 2006.
             </li>
-            <li class="p1 text-neutral-100">I år finder Affaldsindsamlingen sted i hele uge 14 (31. marts – 6. april).</li>
-            <li class="p1 text-neutral-100">
+            <li class="p1 text-neutral-100 list-disc">
+              I år finder Affaldsindsamlingen sted i hele uge 14 (31. marts – 6. april).
+            </li>
+            <li class="p1 text-neutral-100 list-disc">
               I løbet af hverdagene er det fortrinsvis børn fra skoler og dagtilbud, mens
               indsamlingen kulminerer i weekenden med lokale arrangementer i hele landet.
             </li>
-            <li class="p1 text-neutral-100">
+            <li class="p1 text-neutral-100 list-disc">
               I 2024 deltog op mod 240.000 danskere i Affaldsindsamlingen - heriblandt 190.000 børn
               fra skoler og dagtilbud.
             </li>
-            <li class="p1 text-neutral-100">
+            <li class="p1 text-neutral-100 list-disc">
               Efter indsamlingen registrerer indsamlerne deres affald hos Danmarks
               Naturfredningsforening, der herefter laver en opgørelse over, hvor meget der er blevet
               samlet.
             </li>
           </ul>
         </div>
+        <div class="py-8 px-5">
+          <a href="" class=""
+            ><p class="l1 underline text-neutral-100 text-center uppercase">
+              Se her tidligere års indsamlings resultater
+            </p></a
+          >
+        </div>
       </div>
+    </section>
+    <section id="raadgiver" class="place-self-center self-stretch z-3 bg-neutral-100">
+      <div class="flex flex-row gap-5 px-5 self-stretch py-40">
+        <div class="w-full h-full">
+          <img
+            src="../images/anders.png"
+            alt="anders vogel"
+            class="w-full h-80 object-cover rounded-lg"
+          />
+        </div>
+        <div class="flex flex-col gap-6 justify-between">
+          <div>
+            <h1 class="s1">Anders Vogel</h1>
+            <p class="p1">Presse- og kommunikationsrådgiver</p>
+          </div>
+          <div>
+            <h2 class="p1 font-bold">Mail adresse</h2>
+            <a href=""><p class="p1 underline hover:text-lemonYellow-500">anders@dn.dk</p></a>
+          </div>
+          <div>
+            <h2 class="p1 font-bold">Mobile tlf.</h2>
+            <p class="p1">+ 45 31 19 32 11</p>
+          </div>
+          <div class="flex flex-row gap-2">
+            <img src="../assets/linkedin.svg" alt="linkedin" />
+            <img src="../assets/x.svg" alt="x" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="resultat" class="bg-seaGreen-200 py-40">
+      <div>
+        <h2 class="h2">Årets resultat for Affaldsindsamlingen 2024</h2>
+        <p class="p1">
+          Op mod end 240.000 danskere var på skraldejagt fra den 8. – 14. april. Samlet set blev der
+          fjernet 116 ton affald fra natur, gader og veje – heriblandt 115.000 af de små hvide snus-
+          og nikotinposer.
+        </p>
+      </div>
+	  <h2 class="b1 text-seaGreen-950">Sådan så det ud i hver kommune.</h2>
+	  <Button>SE RESULTATERNE</Button>
     </section>
   </main>
 </MainLayout>
