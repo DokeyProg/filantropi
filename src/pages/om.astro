@@ -8,39 +8,48 @@ import Button from "../components/Button.astro";
 
 <MainLayout title="Om os">
   <main class="flex flex-col">
-    <section id="logo" class="pb-20 z-0">
-      <div class="place-self-center py-20">
-        <img src="assets/LOGO - Primært.svg" alt="" />
-      </div>
-      <div class="place-self-center px-8">
-        <p class="s1 text-center text-seaGreen-800">
-          Vi er Danmarks Naturfredningsforenings indsamling af affald i naturen
-        </p>
-      </div>
-    </section>
-    <section id="forening" class="flex flex-col gap-10 z-1 py-40">
-      <div class="px-8 flex flex-col gap-5">
-        <h1 class="b2 text-neutral-950">
-          Danmarks Naturfredningsforenings årlige indsamling af affald i naturen
-        </h1>
-        <p class="p1 text-neutral-950">
-          Siden 2006 har Danmarks Naturfredningsforenings årlige Affaldsindsamling fået danskere fra
-          hele landet med ud at samle affald i naturen. Vores mål er et Danmark helt fri for affald.
-          Vi drømmer om at afholde en affaldsindsamling, hvor vi må lede forgæves efter affald i
-          naturen og byerne, fordi produkterne i stedet indgår i et cirkulært kredsløb og dermed
-          ikke bliver til affald i første omgang – til glæde for vores natur, miljø og klima.
-        </p>
-      </div>
-      <div>
-        <img
-          class="w-[366px] lg:w-[1037px] place-self-center object-cover"
-          src="https://placehold.co/366x206"
-        />
-      </div>
-    </section>
+    <div class="flex flex-col lg:flex-row-reverse w-full place-items-center justify-between">
+      <section id="logo" class="pb-20 px-20 z-0 relative">
+        <div class="place-self-center py-20">
+          <img src="assets/LOGO - Primært.svg" alt="" />
+        </div>
+        <div class="place-self-center px-8">
+          <p class="s1 text-center text-seaGreen-800 lg:hidden">
+            Vi er Danmarks Naturfredningsforenings indsamling af affald i naturen
+          </p>
+        </div>
+      </section>
+      <section id="forening" class="flex flex-col gap-10 z-1 py-40 lg:w-[946px]">
+        <div class="px-8 flex flex-col gap-5">
+          <h1 class="b2 text-neutral-950">
+            Danmarks Naturfredningsforenings årlige indsamling af affald i naturen
+          </h1>
+          <p class="p1 text-neutral-950">
+            Siden 2006 har Danmarks Naturfredningsforenings årlige Affaldsindsamling fået danskere
+            fra hele landet med ud at samle affald i naturen. Vores mål er et Danmark helt fri for
+            affald. Vi drømmer om at afholde en affaldsindsamling, hvor vi må lede forgæves efter
+            affald i naturen og byerne, fordi produkterne i stedet indgår i et cirkulært kredsløb og
+            dermed ikke bliver til affald i første omgang – til glæde for vores natur, miljø og
+            klima.
+          </p>
+        </div>
+        <div>
+          <img
+            class="w-[366px] lg:hidden lg:w-[1037px] place-self-center object-cover"
+            src="https://placehold.co/366x206"
+          />
+        </div>
+      </section>
+    </div>
+    <div class="lg:pb-75">
+      <img
+        class="w-[366px] lg:w-[1037px] place-self-center object-cover"
+        src="https://placehold.co/366x206"
+      />
+    </div>
     <section id="presse" class="z-2">
       <img src="../assets/PRESSE.svg" alt="" class="w-full absolute object-cover" />
-      <div class="relative py-20 px-8">
+      <div class="relative py-20 px-8 lg:px-75 lg:py-75">
         <h1 class="h2 text-neutral-100 pb-10">Presse</h1>
         <div>
           <ul class="px-8 flex flex-col gap-5">
@@ -75,7 +84,7 @@ import Button from "../components/Button.astro";
         </div>
       </div>
     </section>
-    <div class="flex flex-col lg:flex-row-reverse w-full">
+    <div class="flex flex-col lg:flex-row-reverse w-full lg:place-items-center">
       <section id="raadgiver" class="place-self-center self-stretch z-3 bg-neutral-100 lg:w-[100%]">
         <div class="flex flex-row gap-5 px-5 self-stretch lg:place-self-center lg:gap-0 py-40">
           <div class="w-full h-full">
@@ -123,12 +132,13 @@ import Button from "../components/Button.astro";
       </section>
     </div>
     <section id="gallery" class="z-5 bg-neutral-100 py-20">
-      <div class="flex flex-col gap-8 px-8">
+      <div class="flex flex-col gap-8 px-8 lg:px-20 lg:py-50">
         <div>
           <h1 class="h2 text-neutral-950">PRESSEGALLERI</h1>
         </div>
         <div class="">
-          <img src="../assets/Gallery.svg" alt="" class="w-full" />
+          <img src="../assets/Gallery.svg" alt="" class="w-full lg:hidden" />
+          <img src="../assets/WebGalleri.svg" alt="" class="w-full hidden lg:block" />
         </div>
       </div>
     </section>

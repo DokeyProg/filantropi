@@ -1,4 +1,5 @@
 ---
+// Import layout wrapper and reusable components for the page
 import MainLayout from "../layouts/MainLayout.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
@@ -10,6 +11,7 @@ import Carousel from "../components/Carousel.astro";
 <MainLayout title="Forside">
   <main class="flex flex-col">
     <section id="hero" class="z-0">
+      <!-- Hero image: Banner with responsive sizing for mobile and desktop -->
       <div>
         <img
           src="images/kidsinforest10.jpg"
@@ -17,15 +19,18 @@ import Carousel from "../components/Carousel.astro";
           class="h-[490px] lg:w-full lg:h-[790px] object-cover"
         />
       </div>
+      <!-- Main headline and event date -->
       <div class="mt-[50px] flex flex-col gap-[20px]">
         <h1 class="b3 text-center">Kom med og gør en forskel for et renere Danmark</h1>
         <p class="s1 text-center">fra den 13. - 19. april 2026</p>
       </div>
+      <!-- Call-to-action button linking to participation form -->
       <div class="place-self-center mt-[50px]">
         <Button href="deltagelsesform" variant="primary" class="mx-auto mt-[30px]">Deltag</Button>
       </div>
     </section>
     <section id="forest" class="py-[85px] relative z-1">
+      <!-- Responsive background images: mobile and desktop versions -->
       <img src="assets/Baggrund skov.svg" alt="" class="lg:hidden w-full absolute z-1" />
       <img
         src="assets/Baggrund skov-desktop.svg"
@@ -33,17 +38,20 @@ import Carousel from "../components/Carousel.astro";
         class="hidden lg:block w-full absolute z-1"
       />
       <div class="flex flex-col pt-[174px] lg:pt-[374px] gap-[96px] px-8 lg:px-110 z-10 relative">
+        <!-- Program description and placeholder image -->
         <div class="flex flex-col gap-10 relative self-stretch">
           <p class="text-lemonYellow-50 p1">
             Siden 2006 har Danmarks Naturfredningsforenings årlige Affaldsindsamling fået danskere
             fra hele landet med ud at samle affald i naturen. Alle kan være med! Opret selv din egen
             affaldsindsamling eller find én, som du kan være med til.
           </p>
+          <!-- Placeholder image for program content -->
           <img
             class="w-full lg:w-[1037px] place-self-center object-cover"
             src="https://placehold.co/366x206"
           />
         </div>
+        <!-- Last year's results header -->
         <div class="flex flex-col gap-[20px]">
           <h1 class="h2 text-seaGreen-100">Sidste års resultat</h1>
           <p class="p1 text-seaGreen-100">
@@ -51,20 +59,24 @@ import Carousel from "../components/Carousel.astro";
             og engagement gjode vi alle en kæmpe forskel for vores natur og byer
           </p>
         </div>
+        <!-- Statistics infographics: waste collected, participants, and local events -->
         <div class="">
           <div class="flex flex-row justify-between">
+            <!-- Stat 1: Waste collected -->
             <div class="flex flex-col gap-3 lg:gap-6 place-items-center">
               <img src="assets/infografik1.svg" alt="infografik" class="lg:w-[200px]" />
               <p class="p1 w-[101px] lg:w-[150px] text-center text-seaGreen-100">
                 118 ton affald tilmeld
               </p>
             </div>
+            <!-- Stat 2: Number of participants -->
             <div class="flex flex-col gap-3 lg:gap-6 place-items-center">
               <img src="assets/infografik2.svg" alt="infografik" class="lg:w-[200px]" />
               <p class="p1 w-[101px] lg:w-[150px] text-center text-seaGreen-100">
                 190.000 deltager
               </p>
             </div>
+            <!-- Stat 3: Number of local events -->
             <div class="flex flex-col gap-3 lg:gap-6 place-items-center">
               <img src="assets/infografik3.svg" alt="infografik" class="lg:w-[200px]" />
               <p class="p1 w-[101px] lg:w-[150px] text-center text-seaGreen-100">
@@ -75,6 +87,7 @@ import Carousel from "../components/Carousel.astro";
         </div>
       </div>
     </section>
+    <!-- Carousel Section: Interactive display of participation roles -->
     <section id="carousel" class="h-full pt-20 lg:pt-30 flex flex-col gap-10 z-3 bg-neutral-50">
       <div class="px-7 lg:px-75 flex flex-col gap-2">
         <h1 class="h2">Deltag som:</h1>
@@ -85,6 +98,7 @@ import Carousel from "../components/Carousel.astro";
       </div>
     </section>
     <section id="tree-bark" class="max-sm:mt-[185px] w-full object-fit z-4 bg-neutral-100">
+      <!-- Responsive background images with brightness adjustments -->
       <img
         src="assets/treebark.svg"
         alt=""
@@ -96,10 +110,13 @@ import Carousel from "../components/Carousel.astro";
         class="hidden lg:block w-full absolute object-cover z-0 brightness-80"
       />
       <div class="flex flex-col gap-20 lg:gap-10 z-1 relative pt-[216px] lg:pt-[516px] px-5 lg:px-25 lg:py-40">
+        <!-- About section with logo and description -->
         <div class="flex flex-col lg:flex-row-reverse gap-100 justify-between">
+          <!-- Organization logo -->
           <div class="place-self-end">
             <img src="assets/Simplified Logo.svg" alt="" class="lg:w-[373px]" />
           </div>
+          <!-- About text content -->
           <div class="flex flex-col gap-5">
             <h1 class="h2 text-seaGreen-100">Om Affaldsindsamlingen</h1>
             <p class="p1 text-seaGreen-100 lg:w-[566px]">
@@ -109,7 +126,7 @@ import Carousel from "../components/Carousel.astro";
             </p>
           </div>
         </div>
-
+        <!-- Secondary call-to-action button -->
         <div class="place-self-center lg:place-self-start pt-10">
           <Button href="deltagelsesform" variant="primary" class="mx-auto mt-[30px]"
             >Mere om os</Button
@@ -117,37 +134,47 @@ import Carousel from "../components/Carousel.astro";
         </div>
       </div>
     </section>
+    <!-- FAQ Section: Frequently asked questions organized by user type -->
     <section class="z-5">
       <div class="flex flex-col gap-10 bg-neutral-100 relative mt-50 lg:mt-70 px-8 lg:px-75 py-8">
+        <!-- FAQ header -->
         <div class="flex flex-col gap-2 px-8">
           <h1 class="h2">FAQ</h1>
           <p class="p1">Få svar på ofte stillede spørgsmål</p>
         </div>
+        <!-- FAQ items for different user types with clickable links -->
         <div class="flex flex-col px-8 gap-5">
+          <!-- Volunteer FAQ -->
           <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
             <p class="s1 text-neutral-950">Frivillig</p>
             <img src="assets/link-icon.svg" alt="link" class="w-4" />
           </div>
+          <!-- Organizer FAQ -->
           <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
             <p class="s1 text-neutral-950">Arrangør</p>
             <img src="assets/link-icon.svg" alt="link" class="w-4" />
           </div>
+          <!-- Schools and daycare FAQ -->
           <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
             <p class="s1 text-neutral-950">Skoler og dagtilbud</p>
             <img src="assets/link-icon.svg" alt="link" class="w-4" />
           </div>
+          <!-- Companies FAQ -->
           <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
             <p class="s1 text-neutral-950">Virksomheder</p>
             <img src="assets/link-icon.svg" alt="link" class="w-4" />
           </div>
+          <!-- Video guide -->
           <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
             <p class="s1 text-neutral-950">Sådan gør du - Videovejledning</p>
             <img src="assets/link-icon.svg" alt="link" class="w-4" />
           </div>
+          <!-- Local branch information -->
           <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
             <p class="s1 text-neutral-950">Er du fra en DN lokalafdeling?</p>
             <img src="assets/link-icon.svg" alt="link" class="w-4" />
           </div>
+          <!-- Practical information -->
           <div class="flex flex-row border-b-2 border-seaGreen-500 justify-between">
             <p class="s1 text-neutral-950">Praktiske information</p>
             <img src="assets/link-icon.svg" alt="link" class="w-4" />
