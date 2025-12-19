@@ -20,7 +20,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
       </ul>
     </nav>
     <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">
-      <img src="assets/menu-open.svg" alt="Menu" />
+      <img src="..assets/menu-open.svg" alt="Menu" />
     </button>
   </div>
   <nav id="mobilmenu" class="w-full flex flex-col content-center bg-seaGreen-800" x-show="showmenu" x-cloak x-transition x-on:click.outside="showmenu = false">
