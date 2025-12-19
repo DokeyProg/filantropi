@@ -20,7 +20,9 @@ import Button from "../components/Button.astro";
     </section>
     <section id="forening" class="flex flex-col gap-10 z-1 py-40">
       <div class="px-8 flex flex-col gap-5">
-        <h1 class="b2 text-neutral-950">Danmarks Naturfredningsforenings årlige indsamling af affald i naturen</h1>
+        <h1 class="b2 text-neutral-950">
+          Danmarks Naturfredningsforenings årlige indsamling af affald i naturen
+        </h1>
         <p class="p1 text-neutral-950">
           Siden 2006 har Danmarks Naturfredningsforenings årlige Affaldsindsamling fået danskere fra
           hele landet med ud at samle affald i naturen. Vores mål er et Danmark helt fri for affald.
@@ -73,60 +75,62 @@ import Button from "../components/Button.astro";
         </div>
       </div>
     </section>
-    <section id="raadgiver" class="place-self-center self-stretch z-3 bg-neutral-100">
-      <div class="flex flex-row gap-5 px-5 self-stretch py-40">
-        <div class="w-full h-full">
-          <img
-            src="../images/anders.png"
-            alt="anders vogel"
-            class="w-full h-80 object-cover rounded-lg"
-          />
+    <div class="flex flex-col lg:flex-row-reverse w-full">
+      <section id="raadgiver" class="place-self-center self-stretch z-3 bg-neutral-100 lg:w-[100%]">
+        <div class="flex flex-row gap-5 px-5 self-stretch lg:place-self-center lg:gap-0 py-40">
+          <div class="w-full h-full">
+            <img
+              src="../images/anders.png"
+              alt="anders vogel"
+              class="w-full h-80 lg:w-[280px] lg:h-[396px] object-cover rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col gap-6 justify-between">
+            <div>
+              <h1 class="s1 text-neutral-950">Anders Vogel</h1>
+              <p class="p1 text-neutral-950">Presse- og kommunikationsrådgiver</p>
+            </div>
+            <div>
+              <h2 class="p1 text-neutral-950 font-bold">Mail adresse</h2>
+              <a href=""><p class="p1 underline hover:text-lemonYellow-500">anders@dn.dk</p></a>
+            </div>
+            <div>
+              <h2 class="p1 text-neutral-950 font-bold">Mobile tlf.</h2>
+              <p class="p1 text-neutral-950">+ 45 31 19 32 11</p>
+            </div>
+            <div class="flex flex-row gap-2">
+              <img src="../assets/linkedin.svg" alt="linkedin" />
+              <img src="../assets/x.svg" alt="x" />
+            </div>
+          </div>
         </div>
-        <div class="flex flex-col gap-6 justify-between">
-          <div>
-            <h1 class="s1 text-neutral-950">Anders Vogel</h1>
-            <p class="p1 text-neutral-950">Presse- og kommunikationsrådgiver</p>
+      </section>
+      <section id="resultat" class="bg-seaGreen-200 py-40 z-4 lg:w-[100%] lg:align">
+        <div class="flex flex-col gap-8">
+          <div class="px-8 flex flex-col place-items-center gap-5">
+            <h2 class="h2 text-seaGreen-950">Årets resultat for Affaldsindsamlingen 2024</h2>
+            <p class="p1 text-seaGreen-950">
+              Op mod end 240.000 danskere var på skraldejagt fra den 8. – 14. april. Samlet set blev
+              der fjernet 116 ton affald fra natur, gader og veje – heriblandt 115.000 af de små
+              hvide snus- og nikotinposer.
+            </p>
           </div>
-          <div>
-            <h2 class="p1 text-neutral-950 font-bold">Mail adresse</h2>
-            <a href=""><p class="p1 underline hover:text-lemonYellow-500">anders@dn.dk</p></a>
+          <h2 class="b1 text-seaGreen-950 place-self-center">Sådan så det ud i hver kommune.</h2>
+          <div class="place-self-center">
+            <Button href="deltagelsesform" variant="primary">SE RESULTATERNE</Button>
           </div>
-          <div>
-            <h2 class="p1 text-neutral-950 font-bold">Mobile tlf.</h2>
-            <p class="p1 text-neutral-950">+ 45 31 19 32 11</p>
-          </div>
-          <div class="flex flex-row gap-2">
-            <img src="../assets/linkedin.svg" alt="linkedin" />
-            <img src="../assets/x.svg" alt="x" />
-          </div>
+        </div>
+      </section>
+    </div>
+    <section id="gallery" class="z-5 bg-neutral-100 py-20">
+      <div class="flex flex-col gap-8 px-8">
+        <div>
+          <h1 class="h2 text-neutral-950">PRESSEGALLERI</h1>
+        </div>
+        <div class="">
+          <img src="../assets/Gallery.svg" alt="" class="w-full" />
         </div>
       </div>
     </section>
-    <section id="resultat" class="bg-seaGreen-200 py-40 z-4">
-      <div class="flex flex-col gap-8">
-        <div class="px-8 flex flex-col place-items-center gap-5">
-          <h2 class="h2 text-seaGreen-950">Årets resultat for Affaldsindsamlingen 2024</h2>
-          <p class="p1 text-seaGreen-950">
-            Op mod end 240.000 danskere var på skraldejagt fra den 8. – 14. april. Samlet set blev
-            der fjernet 116 ton affald fra natur, gader og veje – heriblandt 115.000 af de små hvide
-            snus- og nikotinposer.
-          </p>
-        </div>
-        <h2 class="b1 text-seaGreen-950 place-self-center">Sådan så det ud i hver kommune.</h2>
-        <div class="place-self-center">
-          <Button href="deltagelsesform" variant="primary">SE RESULTATERNE</Button>
-        </div>
-      </div>
-    </section>
-	<section id="gallery" class="z-5 bg-neutral-100 py-20">
-		<div class="flex flex-col gap-8 px-8">
-		<div>
-			<h1 class=" h2 text-neutral-950">PRESSEGALLERI</h1>
-		</div>
-		<div class="">
-			<img src="../assets/Gallery.svg" alt="" class="w-full">
-		</div>
-		</div>
-	</section>
   </main>
 </MainLayout>
