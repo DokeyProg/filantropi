@@ -5,7 +5,45 @@ import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import Button from "../components/Button.astro";
 ---
+
 <MainLayout title="Deltagelsesform">
-	<main>
-	</main>
+  <main>
+    <section class="py-20">
+      <div class="px-8">
+        <h1 class="h2 text-seaGreen-900">Deltagelsesform</h1>
+        <p class="p1 text-neutral-950">Venligst fyld formen op med dine oplysninger.</p>
+      </div>
+      <div class="px-8">
+        <form class="flex flex-col" action="">
+          <label class="b1" for="">Dit Navn</label>
+          <input type="text" />
+          <label class="b1" for="">Mail adr.</label>
+          <input type="text" />
+          <label class="b1" for="">Telefon nr.</label>
+          <input type="text" />
+          <div class="flex flex-row gap-10 py-5">
+            <div class="flex flex-row gap-5 place-items-center">
+              <p class="b1">Alene</p>
+              <img src="../assets/circle.svg" alt="" />
+            </div>
+            <div class="flex flex-row gap-5 place-items-center">
+              <p class="b1">Gruppe</p>
+              <img src="../assets/circle.svg" alt="" />
+            </div>
+          </div>
+          <label class="b1" for="">Rute/By</label>
+          <input type="text" />
+        </form>
+      </div>
+	  <div class="px-8 pt-20">
+		<div class="flex flex-row gap-2">
+			<img src="../assets/Checkbox.svg" alt="checkbox">
+			<p class="p1 text-neutral-950">Lorem ipsum dolor sit amet, codidud ut labore et dolore magna aliqua.</p>
+		</div>
+	  </div>
+	  <div class="place-self-center py-8">
+		<Button variant="primary">DELTAG</Button>
+	  </div>
+    </section>
+  </main>
 </MainLayout>
